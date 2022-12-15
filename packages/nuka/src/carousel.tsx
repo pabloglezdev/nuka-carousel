@@ -63,6 +63,8 @@ export const Carousel = (rawProps: CarouselProps): React.ReactElement => {
     slidesToShow,
     speed,
     style,
+    containerStyle,
+    frameStyle,
     swiping: mobileDraggingEnabled,
     wrapAround,
     zoomScale,
@@ -607,6 +609,7 @@ export const Carousel = (rawProps: CarouselProps): React.ReactElement => {
       className={'slider-container'}
       style={{
         position: 'relative',
+        ...containerStyle,
       }}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -644,6 +647,7 @@ export const Carousel = (rawProps: CarouselProps): React.ReactElement => {
           willChange: 'height',
           userSelect: 'none',
           ...style,
+          ...frameStyle,
         }}
         aria-label={frameAriaLabel}
         role="region"

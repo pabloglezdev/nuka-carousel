@@ -417,6 +417,8 @@ export interface InternalCarouselProps {
    * style object
    */
   style: CSSProperties;
+  containerStyle: CSSProperties;
+  frameStyle: CSSProperties;
 
   /**
    * Enable touch swipe/dragging

@@ -61,6 +61,8 @@ const defaultProps: InternalCarouselProps = {
   slidesToShow: 1,
   speed: 500,
   style: {},
+  containerStyle: {},
+  frameStyle: {},
   swiping: true,
   vertical: false,
   withoutControls: false,
